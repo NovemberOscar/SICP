@@ -32,3 +32,32 @@
 
 ; equals
 136
+
+; normal-order evaluation
+(f 5) 
+
+; expand
+(sum-of-squares (+ 5 1) (* 5 2))
+
+; expand
+(+ (square (+ 5 1)) (square (* 5 2)))
+
+; expand
+(+ (* (+ 5 1) (+ 5 1)) (* (* 5 2) (* 5 2)))
+
+; fold
+(+ (* 6 6) (* 10 10))
+
+; fold
+(+ 36 100)
+
+; fold
+136
+
+; applicative-order evaluation
+(sum-of-squares (+ 5 1) (* 5 2))
+(sum-of-squares 6 10)
+(+ (square 6) (square 10))
+(+ (* 6 6) (* 10 10))
+(+ 36 100)
+136
