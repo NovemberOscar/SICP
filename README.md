@@ -5,26 +5,14 @@
 
 Only for macOS
 
-### Interpreter
-
-#### racket
-
-recommended way
+### Interpreterxs
 
 ```bash 
 brew install racket
 raco pkg install sicp
-racket FILENAME
-```
-
-#### mit-scheme
-first, comment out all `#lang sicp`
-
-```bash
-brew install mit-scheme
-scheme < FILENAME
+racket FILENAME.rkt
 ```
 
 ### Editor setting
 
-install VSCode and extension `sjhuangx.vscode-scheme`
+install VSCode and extension `karyfoundation.racket` and `formulahendry.code-runner`
